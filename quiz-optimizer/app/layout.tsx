@@ -4,7 +4,7 @@ import "./globals.css";
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
-  variable: '--font-serif', // We create a variable to use in Tailwind
+  variable: '--font-serif',
 });
 
 const inter = Inter({ 

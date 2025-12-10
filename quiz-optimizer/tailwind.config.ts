@@ -13,7 +13,6 @@ const config: Config = {
         serif: ['var(--font-serif)'],
       },
       colors: {
-        // "Old Money" / Minimalist Palette
         cream: '#FAF9F6',
         charcoal: '#1c1c1c', 
         stone: {

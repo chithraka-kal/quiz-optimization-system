@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getOptimalQuestions } from '@/lib/optimizer';
+import { getOptimalQuestions } from '@/app/lib/optimizer';
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Missing data' }, { status: 400 });
   }
 
-  // Run the algorithm we wrote in Phase 4
+  // Run the algorithm
   const result = getOptimalQuestions(questions, timeLimit);
 
   return NextResponse.json(result);
